@@ -19,7 +19,7 @@
   .navbar-b.navbar-trans .nav-link,
   .navbar-b.navbar-reduce .nav-link 
   {
-    color: black;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 600;
   }
