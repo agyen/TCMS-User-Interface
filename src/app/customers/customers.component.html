@@ -12,11 +12,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let item of customers">
-                    <td>{{item.id}}</td>
-                    <td>{{item.name}}</td>
-                    <td>{{item.email}}</td>
-                    <td>{{item.level}}</td>
+                <tr *ngFor="let item of retrivedCustomers">
+                    <td>{{item.customer_id}}</td>
+                    <td>{{item.customer_name}}</td>
+                    <td>{{item.customer_email}}</td>
+                    <td>{{item.customer_level}}</td>
                     <td><a routerLink = "/details">view details</a></td>
                 </tr>
 
