@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ReportsComponent } from './reports/reports.component';
 import { DetailsComponent } from './details/details.component';
+import { AddcustomerComponent } from './addcustomer/addcustomer.component';
+import { AddprojectComponent } from './addproject/addproject.component';
 
 
 const routes: Routes = [ 
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path: 'projects', component: ProjectsComponent},
   {path:'reports', component:ReportsComponent},
   {path:'details', component:  DetailsComponent},
+  {path: 'addcustomer', component: AddcustomerComponent},
+  {path:'addproject', component:AddprojectComponent},
 
   { path : "", redirectTo:"/home", pathMatch:"full"}
 ];

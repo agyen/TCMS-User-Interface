@@ -12,4 +12,13 @@ export class CustomersComponent implements OnInit {
   ngOnInit() {
   }
 
+  customers= [
+    {id: 101, name: "Isaac Agyen", email: "ike@gmail.com", level:"Premium"},
+    {id: 102, name: "Isaac Agyen", email: "ike@gmail.com", level:"Premium"},
+    {id: 103, name: "Isaac Agyen", email: "ike@gmail.com", level:"Premium"},
+    {id: 104, name: "Isaac Agyen", email: "ike@gmail.com", level:"Premium"},
+    {id: 105, name: "Isaac Agyen", email: "ike@gmail.com", level:"Premium"}
+
+  ]
+
 }

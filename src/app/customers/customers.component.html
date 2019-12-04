@@ -12,50 +12,17 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Isaac Duffour Agyen</td>
-                    <td>ag@gmail.com</td>
-                    <td>Gold</td>
-                    <td><a href="./details.html">view details</a></td>
+                <tr *ngFor="let item of customers">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.level}}</td>
+                    <td><a routerLink = "/details">view details</a></td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob Asiedu</td>
-                    <td>ja@gmail.com</td>
-                    <td>Platinum</td>
-                    <td><a href="">view details</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry Hymns</td>
-                    <td>la@gmail.com</td>
-                    <td>Premium</td>
-                    <td><a href="">view details</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Sam Bartels</td>
-                    <td>sam@gmail.com</td>
-                    <td>Premium</td>
-                    <td><a href="">view details</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Dennis Effah</td>
-                    <td>la@gmail.com</td>
-                    <td>Premium</td>
-                    <td><a href="">view details</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Shadrack Ankomahene</td>
-                    <td>sa@gmail.com</td>
-                    <td>Premium</td>
-                    <td><a href="">view details</a></td>
-                </tr>
+
             </tbody>
         </table>
-        <a routeLink ="/details" type="button" class="btn btn-success" style="float:right; background-color:#4CAF50; color:white">Add new customer</a>
+        <a routerLink ="/addcustomer"
+         class="btn btn-success" style="float:right; background-color:#4CAF50; color:white">Add new customer</a>
     </div>
     
