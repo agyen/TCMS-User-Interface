@@ -15,5 +15,8 @@ getAllCustomers(): Observable<CustomersI[]>{
   return this.http.get<CustomersI[]>(this.customerurl)
 }
     
+addCustomer(client: CustomersI): Observable<CustomersI>{
+  return this.http.post<CustomersI>(this.customerurl,client)
+}
   
 }

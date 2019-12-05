@@ -1,66 +1,55 @@
 
  <div class="testbox" >
-    <form action="/">
+    <form [formGroup]="newCustomerForm" action="/" (ngSubmit)="onSubmit()">
         <div class="banner">
             <h1>New Member Registration</h1>
         </div>
         <div class="colums">
+                <div class="item">
+                        <label for="fname"> Customer ID<span>*</span></label>
+                        <input formControlName="customer_id" id="fname" type="text" name="fname" required />
+                </div>
+
             <div class="item">
-                <label for="fname"> First Name<span>*</span></label>
-                <input id="fname" type="text" name="fname" required />
+                <label for="fname"> Customer Name<span>*</span></label>
+                <input formControlName="customer_name" id="fname" type="text" name="fname" required />
             </div>
-            <div class="item">
-                <label for="lname"> Last Name<span>*</span></label>
-                <input id="lname" type="text" name="lname" required />
-            </div>
+            
             <div class="item">
                 <label for="address1">Address <span>*</span></label>
-                <input id="address1" type="text" name="address1" required />
+                <input formControlName="customer_address" id="address1" type="text" name="address1" required />
             </div>
             <div class="item">
                 <label for="eaddress">Email Address<span>*</span></label>
-                <input id="eaddress" type="text" name="eaddress" required />
+                <input formControlName="customer_email" id="eaddress" type="text" name="eaddress" required />
             </div>
             <div class="item">
                 <label for="phone">Phone<span>*</span></label>
-                <input id="phone" type="tel" name="phone" required />
+                <input formControlName="customer_telephone" id="phone" type="tel" name="phone" required />
+            </div>
+            <div class="item">
+                    <label for="phone">Customer level<span>*</span></label>
+                    <input formControlName="customer_level" id="phone" type="tel" name="phone" required />
             </div>
         </div>
-        <div class="question">
+        <!-- <div class="question">
             <label>Membership Type</label>
             <div class="question-answer">
                 <div>
-                    <input type="radio" value="none" id="radio_1" name="type" />
+                    <input formControlName="customer_level" type="radio" value="none" id="radio_1" name="customer_level" />
                     <label for="radio_1" class="radio"><span>Gold</span></label>
                 </div>
                 <div>
-                    <input type="radio" value="none" id="radio_2" name="type" />
+                    <input formControlName="customer_level" type="radio" value="none" id="radio_2" name="customer_level" />
                     <label for="radio_2" class="radio"><span>Premium</span></label>
                 </div>
                 <div>
-                    <input type="radio" value="none" id="radio_3" name="type" />
+                    <input formControlName="customer_level" type="radio" value="none" id="radio_3" name="customer_level" />
                     <label for="radio_3" class="radio"><span>Platinum</span></label>
                 </div>
             </div>
-        </div>
-        <div class="question">
-            <label>Preferred way to contact </label>
-            <div class="question-answer">
-                <div>
-                    <input type="radio" value="none" id="radio_4" name="contact" />
-                    <label for="radio_4" class="radio"><span>Phone</span></label>
-                </div>
-                <div>
-                    <input type="radio" value="none" id="radio_5" name="contact" />
-                    <label for="radio_5" class="radio"><span>Email</span></label>
-                </div>
-                <div>
-                    <input type="radio" value="none" id="radio_6" name="contact" />
-                    <label for="radio_6" class="radio"><span>Any</span></label>
-                </div>
-            </div>
-        </div>
-        <input type="checkbox" name="checkbox1">
+        </div> -->
+       
         <div class="btn-block">
             <button type="submit" href="" style="background-color:#4CAF50">Add</button>
         </div>
