@@ -5,11 +5,6 @@
             <h1>New Member Registration</h1>
         </div>
         <div class="colums">
-                <div class="item">
-                        <label for="fname"> Customer ID<span>*</span></label>
-                        <input formControlName="customer_id" id="fname" type="number" name="fname" required />
-                </div>
-
             <div class="item">
                 <label for="fname"> Customer Name<span>*</span></label>
                 <input formControlName="customer_name" id="fname" type="text" name="fname" required />
@@ -27,10 +22,19 @@
                 <label for="phone">Phone<span>*</span></label>
                 <input formControlName="customer_telephone" id="phone" type="tel" name="phone" required />
             </div>
-            <div class="item">
+            <!-- <div class="item">
                     <label for="phone">Customer level<span>*</span></label>
                     <input formControlName="customer_level" id="phone" type="tel" name="phone" required />
-            </div>
+            </div> -->
+            <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select Customer Level</label>
+                    <select formControlName="customer_level" class="form-control" id="exampleFormControlSelect1">
+                      <option>Gold</option>
+                      <option>Premium</option>
+                      <option>Platinum</option>
+                     
+                    </select>
+                </div>
         </div>
         <!-- <div class="question">
             <label>Membership Type</label>
