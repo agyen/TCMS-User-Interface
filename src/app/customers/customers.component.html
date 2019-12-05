@@ -1,6 +1,12 @@
 
+
 <div class="container">
-        <h2 class="text-center">Turntabl Customers</h2>
+
+    <h2 class="text-center">Turntabl Customers</h2>
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()" class="form-inline">
+            <input formControlName="customer_name" class="form-control mr-sm-2" type="search" placeholder="Search by name" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
         <table class="table">
             <thead class="thead-dark">
                 <tr>
